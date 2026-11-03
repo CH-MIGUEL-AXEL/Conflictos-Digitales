@@ -34,12 +34,12 @@ No fue posible revisar la maquetación del Word mediante el renderizador, porque
 - El usuario confirmó expresamente que el contacto propuesto es en tres días hábiles.
 - Las preguntas de reflexión se redactaron para el prototipo y están identificadas como adaptación didáctica.
 - Las tres tarjetas de recursos representan materiales previstos; no hay enlaces de descarga inventados.
-- El logotipo UMB se extrajo de la imagen del Word. El símbolo vectorial de colibrí es una propuesta gráfica, no la mascota oficial.
+- El logotipo UMB se extrajo de la imagen del Word. Posteriormente, el usuario proporcionó el logotipo de COLIBRÍ EN UNIDAD, integrado sin alteraciones en cabecera, portada y pie de página.
 - La fecha de entrega, la asignatura y los nombres de estudiante y docente se consideran información del documento académico; no son necesarios para la navegación de la comunidad.
 
 ## Pendientes para completar el contenido
 
-1. Entregar el archivo oficial de la mascota colibrí y confirmar el uso del logotipo UMB y los tonos institucionales.
+1. El logotipo de COLIBRÍ EN UNIDAD ya fue proporcionado e integrado. Confirmar la aplicación institucional de ambos logotipos y los tonos de la paleta.
 2. Proporcionar materiales completos de los cuatro encuentros y archivos de recursos.
 3. Confirmar responsables, suplentes, horarios, contactos y canal presencial, así como la instancia alternativa ante reportes que involucren al equipo.
 4. Validar alojamiento, permisos, alcance y plazos operativos con la UMB.

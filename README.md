@@ -31,9 +31,9 @@ Se incluyen propósito, público destinatario, organización, principios éticos
 - `src/app/app.component.ts`: menú móvil y reflexiones desplegables.
 - `src/styles.css`: paleta, tipografía y adaptación a pantallas.
 - `public/umb-logo.png`: logotipo extraído del Word suministrado, sin modificaciones.
-- `public/colibri.svg`: símbolo vectorial creado para el prototipo; sustituir por la mascota oficial aprobada cuando se proporcione.
+- `public/colibri-en-unidad.png`: logotipo proporcionado por el usuario, integrado sin alteraciones en cabecera, portada y pie de página.
 
-La ilustración de portada es original. No se cargan fuentes ni imágenes de terceros por red.
+La portada muestra el logotipo proporcionado de COLIBRÍ EN UNIDAD. No se cargan fuentes ni imágenes de terceros por red.
 
 ## Alcance de esta versión
 
@@ -45,7 +45,7 @@ Antes de habilitar la atención se requieren alojamiento y permisos autorizados,
 
 ## Identidad visual
 
-Guinda `#611b35`, dorado `#a68549` y marfil `#faf8f3` son tonos de propuesta, pendientes de cotejar con el manual institucional vigente. El logotipo UMB procede del documento aportado; su uso final y la mascota deben validarse institucionalmente.
+Guinda `#611b35`, dorado `#a68549` y marfil `#faf8f3` son tonos de propuesta, pendientes de cotejar con el manual institucional vigente. El logotipo UMB procede del documento aportado. El logotipo de COLIBRÍ EN UNIDAD fue proporcionado por el usuario y se conserva sin recortes ni alteraciones. La aplicación final de la identidad visual queda sujeta a validación institucional.
 
 ## Repositorio
 
