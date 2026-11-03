@@ -5,6 +5,8 @@ out-tsc/
 *.log
 .DS_Store
 .local-review/
+.codex-attachments/
+.wrangler/
 .env
 .env.*
 !.env.example

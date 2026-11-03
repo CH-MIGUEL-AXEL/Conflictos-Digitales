@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "conflictos-digitales",
+  "compatibility_date": "2026-11-02",
+  "build": {
+    "command": "npm run build"
+  },
+  "assets": {
+    "directory": "./dist/convivencia/browser",
+    "not_found_handling": "single-page-application"
+  }
+}

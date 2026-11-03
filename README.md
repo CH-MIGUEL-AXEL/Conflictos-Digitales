@@ -13,6 +13,29 @@ npm start
 
 Abrir http://127.0.0.1:4200/. Compilación de producción: `npm run build`. Salida estática: `dist/convivencia/browser`.
 
+## Despliegue en Cloudflare Workers
+
+El repositorio incluye `wrangler.jsonc` para el Worker existente `conflictos-digitales`. Wrangler ejecuta la compilación de Angular y publica los archivos estáticos de `dist/convivencia/browser`, con fallback de aplicación de una sola página. No requiere backend ni archivo de servidor Worker.
+
+En Cloudflare, Settings > Build:
+
+- Repositorio: `CH-MIGUEL-AXEL/Conflictos-Digitales`; rama: `main`.
+- Directorio raíz: la raíz del repositorio (`/`).
+- Comando de compilación: vacío; la compilación está definida en `wrangler.jsonc`.
+- Comando de despliegue: `npm run deploy` (también funciona `npx wrangler deploy`).
+- Node: `.nvmrc` fija `24.22.1`, la versión detectada en el registro de Cloudflare. Si hay una variable `NODE_VERSION` en el panel, se recomienda el mismo valor.
+- npm: `packageManager` fija `npm@10.9.2`, la versión usada para validar la instalación limpia y el archivo de dependencias.
+
+Si el panel ya tiene `npm run build` como comando de compilación, funcionará, aunque Angular compilará de nuevo al ejecutar Wrangler.
+
+`npm run deploy:check` valida el empaquetado sin publicar ni requerir credenciales. `npm run deploy` sí publica y necesita la autenticación de Cloudflare; el servicio de Workers Builds administra su propia autenticación. No agregar tokens al repositorio.
+
+Referencia oficial: https://developers.cloudflare.com/workers/framework-guides/web-apps/more-web-frameworks/angular/
+
+### Si Cloudflare rechaza `npm ci`
+
+El error `EUSAGE` con `Missing: @emnapi/core` o `Missing: @emnapi/runtime` corresponde a un lockfile incompleto para npm 10, no a un error de las plantillas Angular. El lockfile del repositorio se reparó con npm 10.9.2 en un directorio sin `node_modules` y se comprobó con una instalación limpia real. También se validó `npm run deploy:check` con Node 24.22.1. Para futuras actualizaciones de dependencias, conservar la versión de npm indicada en `packageManager` y verificar `npm ci` antes de subir cambios.
+
 ## Contenido y estructura
 
 La información se adaptó de la propuesta académica proporcionada por la responsable del proyecto. Las cuatro entradas son:
