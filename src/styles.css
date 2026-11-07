@@ -82,12 +82,16 @@
 @media(max-width:800px){.brand-logo{width:52px;height:52px}.hero-logo-panel{padding:0 18px}.hero-logo{max-width:430px}}
 @media(max-width:520px){.site-header .brand{gap:9px}.site-header .brand strong{font-size:12px}.brand-logo{width:46px;height:48px}.hero-logo-panel{padding:0 8px}.footer-top .brand-logo{width:65px;height:62px}}
 
-/* Fotografías de la comunidad, conservando la proporción de cada original. */
-.community-gallery{columns:3;column-gap:24px}
-.community-photo{margin:0 0 24px;break-inside:avoid;border:1px solid var(--line);background:#fffdf9}
-.community-photo a{display:block}
-.community-photo img{display:block;width:100%;height:auto}
-.community-photo figcaption{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 18px;font-size:12px;line-height:1.6;color:var(--wine)}
+/* Cuadrícula editorial: una fotografía principal y cuatro vistas secundarias. */
+.community-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:230px;gap:20px}
+.community-photo{display:grid;grid-template-rows:minmax(0,1fr) 58px;min-width:0;margin:0;border:1px solid var(--line);background:#fffdf9;overflow:hidden}
+.community-photo:first-child{grid-column:span 2;grid-row:span 2}
+.community-photo a{display:block;min-height:0;overflow:hidden}
+.community-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .25s ease}
+.community-photo a:hover img{transform:scale(1.025)}
+.community-photo img[src$="visita-aduana.jpeg"]{object-position:center 60%}
+.community-photo figcaption{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;font-size:12px;line-height:1.5;color:var(--wine)}
 .community-photo figcaption span{color:var(--gold)}
-@media(max-width:800px){.community-gallery{columns:2;column-gap:18px}.community-photo{margin-bottom:18px}}
-@media(max-width:520px){.community-gallery{columns:1}}
+@media(min-width:1101px){.community-photo:first-child figcaption{font-family:var(--font-editorial);font-size:19px}}
+@media(max-width:1100px){.community-gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:auto;gap:18px}.community-photo{grid-template-rows:auto 58px}.community-photo:first-child{grid-row:auto}.community-photo a{aspect-ratio:16/10}.community-photo:first-child a{aspect-ratio:16/8}}
+@media(max-width:520px){.community-gallery{gap:14px}.community-photo{grid-template-rows:auto minmax(66px,auto)}.community-photo figcaption{font-size:11px;padding:10px}.community-photo a{aspect-ratio:4/3}.community-photo:first-child a{aspect-ratio:16/10}.community-photo:first-child figcaption{font-size:14px;min-height:48px}}
