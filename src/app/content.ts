@@ -2,6 +2,13 @@
 export const SITE_CONTENT = {
   institution: 'UES Tepotzotlán',
   title: 'COLIBRÍ EN UNIDAD',
+  gallery: [
+    { src: 'imagenes/comunidad/graduacion.jpeg', title: 'Celebrar nuestros logros', alt: 'Grupo de personas con toga y documentos de la UMB lanzando sus birretes durante una graduación.', width: 1600, height: 1067 },
+    { src: 'imagenes/comunidad/encuentro-comunidad.jpeg', title: 'Encontrarnos en comunidad', alt: 'Vista desde arriba de un grupo de personas reunidas en un patio, saludando a la cámara.', width: 1600, height: 1200 },
+    { src: 'imagenes/comunidad/comunidad-tepotzotlan.jpeg', title: 'Compartir el sentido de pertenencia', alt: 'Grupo de personas al aire libre sosteniendo un banderín de la UMB Tepotzotlán.', width: 1600, height: 1200 },
+    { src: 'imagenes/comunidad/visita-aduana.jpeg', title: 'Aprender en otros espacios', alt: 'Grupo de personas con cascos y chalecos de seguridad frente al edificio de la Aduana de México.', width: 900, height: 1600 },
+    { src: 'imagenes/comunidad/representacion-universitaria.jpeg', title: 'Representar a nuestra comunidad', alt: 'Seis personas con vestimenta uniforme sosteniendo un reconocimiento y un banderín de la UMB Tepotzotlán.', width: 1600, height: 738 }
+  ],
   entries: [
     { id: 'aprender', number: '01', tag: 'Formación', title: 'Aprender a convivir', description: 'Reconocer necesidades, practicar la escucha y construir acuerdos para cuidar nuestra convivencia digital.', link: '#aprender', action: 'Explorar los encuentros' },
     { id: 'apoyo', number: '02', tag: 'Acompañamiento', title: 'Necesito apoyo', description: 'Conoce la ruta propuesta ante insultos, rumores, burlas y hostigamiento digital.', link: '#apoyo', action: 'Conocer la ruta de apoyo' },

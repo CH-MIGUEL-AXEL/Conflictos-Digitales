@@ -81,3 +81,13 @@
 @media(max-width:1100px) and (min-width:801px){.brand-logo{width:54px;height:54px}.site-header .brand{gap:9px}.site-header .brand strong{font-size:13px}.site-header nav{gap:10px;font-size:10px}.site-header .nav-cta{padding:12px 10px}}
 @media(max-width:800px){.brand-logo{width:52px;height:52px}.hero-logo-panel{padding:0 18px}.hero-logo{max-width:430px}}
 @media(max-width:520px){.site-header .brand{gap:9px}.site-header .brand strong{font-size:12px}.brand-logo{width:46px;height:48px}.hero-logo-panel{padding:0 8px}.footer-top .brand-logo{width:65px;height:62px}}
+
+/* Fotografías de la comunidad, conservando la proporción de cada original. */
+.community-gallery{columns:3;column-gap:24px}
+.community-photo{margin:0 0 24px;break-inside:avoid;border:1px solid var(--line);background:#fffdf9}
+.community-photo a{display:block}
+.community-photo img{display:block;width:100%;height:auto}
+.community-photo figcaption{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 18px;font-size:12px;line-height:1.6;color:var(--wine)}
+.community-photo figcaption span{color:var(--gold)}
+@media(max-width:800px){.community-gallery{columns:2;column-gap:18px}.community-photo{margin-bottom:18px}}
+@media(max-width:520px){.community-gallery{columns:1}}
